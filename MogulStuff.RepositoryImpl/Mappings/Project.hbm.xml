@@ -9,7 +9,7 @@
 
     <property name="Name" />
 
-    <bag name="Issues" inverse="true" cascade="all-delete-orphan">
+    <bag name="Issues" inverse="false" fetch="join" cascade="all-delete-orphan">
       <key column="ProjectId"/>
       <one-to-many class="Issue"/>
     </bag>

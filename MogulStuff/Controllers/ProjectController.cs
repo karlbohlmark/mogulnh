@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using MogulStuff.Domain;
 using System.Transactions;
+using StructureMap;
+using NHibernate;
 
 namespace MogulStuff.Controllers
 {
@@ -34,11 +36,16 @@ namespace MogulStuff.Controllers
         public ActionResult Index(Project project)
         {
             using (var trans = new TransactionScope()) {
-                project.Issues.Add(new Issue { Title = "This is serious stuff." });
+                project.Issues.Add(new Issue { Title = "To illustrate cascading persistance, here is an issue for: " + project.Name });
                 projectRepository.Add(project);
                 trans.Complete();
             }
             return Redirect("/Project/");
+        }
+
+        [HttpGet]
+        public ActionResult Hql(string query) {
+            return Json(ObjectFactory.GetInstance<ISession>().CreateQuery(query).List(), JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -32,6 +32,8 @@ namespace MogulStuff
 
             ControllerBuilder.Current.SetControllerFactory(new StructureMapControllerFactory());
 
+            HibernatingRhinos.Profiler.Appender.NHibernate.NHibernateProfiler.Initialize();
+
             ObjectFactory.Initialize(i=>i.AddRegistry(new Registry()));
         }
     }
