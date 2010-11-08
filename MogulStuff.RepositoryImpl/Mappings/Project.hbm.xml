@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+    namespace="MogulStuff.Domain" assembly="MogulStuff.Domain">
+
+  <class name="Project" >
+    <id name="Id">
+      <generator class="native" />
+    </id>
+
+    <property name="Name" />
+
+    <bag name="Issues" inverse="true" cascade="all-delete-orphan">
+      <key column="ProjectId"/>
+      <one-to-many class="Issue"/>
+    </bag>
+    
+  </class>
+
+</hibernate-mapping>

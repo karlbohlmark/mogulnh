@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MogulStuff", "MogulStuff\MogulStuff.csproj", "{6F2C8D2B-2266-4FF1-AFD7-CE1AFC64A79E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MogulStuff.Domain", "MogulStuff.Domain\MogulStuff.Domain.csproj", "{C1BFBB3A-3BBB-4F59-910C-1BFFE08522B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MogulStuff.RepositoryImpl", "MogulStuff.RepositoryImpl\MogulStuff.RepositoryImpl.csproj", "{2955199D-B642-4F96-A1BB-0392B39671F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F2C8D2B-2266-4FF1-AFD7-CE1AFC64A79E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2C8D2B-2266-4FF1-AFD7-CE1AFC64A79E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2C8D2B-2266-4FF1-AFD7-CE1AFC64A79E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2C8D2B-2266-4FF1-AFD7-CE1AFC64A79E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BFBB3A-3BBB-4F59-910C-1BFFE08522B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BFBB3A-3BBB-4F59-910C-1BFFE08522B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BFBB3A-3BBB-4F59-910C-1BFFE08522B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BFBB3A-3BBB-4F59-910C-1BFFE08522B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2955199D-B642-4F96-A1BB-0392B39671F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2955199D-B642-4F96-A1BB-0392B39671F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2955199D-B642-4F96-A1BB-0392B39671F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2955199D-B642-4F96-A1BB-0392B39671F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
