@@ -17,24 +17,10 @@ namespace MogulStuff
 {
     public class NHibernateConfig
     {
-        private static string  DbFile = "fluent.db";
-
         public static ISessionFactory BuildSessionFactory() {
             var cfg  = new Configuration().Configure();
-            BuildSchema(cfg);
+            new SchemaExport(cfg).Create(false, true);
             return cfg.BuildSessionFactory();
-        }
-
-        private static void BuildSchema(Configuration config)
-        {
-            // delete the existing db on each run
-            if (File.Exists(DbFile))
-                File.Delete(DbFile);
-
-            // this NHibernate tool takes a configuration (with mapping info in)
-            // and exports a database schema from it
-            new SchemaExport(config)
-                .Create(false, true);
         }
     }
 }

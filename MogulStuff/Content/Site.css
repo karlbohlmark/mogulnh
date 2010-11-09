@@ -115,6 +115,8 @@ page width. Or, you can specify an exact pixel width. */
     background-color: #fff;
     margin-bottom: 30px;
     _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+    width:100%;
+    overflow:auto;
 }
 
 #footer
@@ -341,4 +343,37 @@ div#title
 .tri-state
 {
     width: 6em;
+}
+
+input,textarea
+{
+    float:left;
+    clear:both;
+}
+
+input[type=submit]
+{
+    margin-top:5px;
+    margin-left:0px;
+}
+
+input[type=text]
+{
+    -moz-border-radius:3px;
+    --webkit-border-radius:3px;
+}
+
+textarea
+{
+    width:196px;
+}
+
+div:last-child
+{
+    clear:both;
+}
+
+.html5ify-placeholder
+{
+    color:#aaaaaa;    
 }

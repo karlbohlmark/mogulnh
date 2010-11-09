@@ -7,6 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
     <h2>List</h2>
+    <%=Html.ActionLink("New Project", "New")%>
      <ul>
         <%foreach (var p in Model)
           { %>
